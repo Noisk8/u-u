@@ -1,0 +1,46 @@
+{
+    "empleadas": [
+        {
+            "nombre": "Ana Pérez",
+            "telefono": "123456789",
+            "direccion": "Calle 1 #123"
+        },
+        {
+            "nombre": "María López",
+            "telefono": "987654321",
+            "direccion": "Avenida 2 #456"
+        }
+    ],
+    "clientes": [
+        {
+            "nombre": "Carlos García",
+            "telefono": "555123456",
+            "direccion": "Calle 3 #789",
+            "lotes": [
+                {
+                    "cantidad_prendas": 100,
+                    "tipo_tela": "Algodón"
+                },
+                {
+                    "cantidad_prendas": 50,
+                    "tipo_tela": "Poliéster"
+                }
+            ]
+        },
+        {
+            "nombre": "Laura Martínez",
+            "telefono": "555987654",
+            "direccion": "Avenida 4 #321",
+            "lotes": [
+                {
+                    "cantidad_prendas": 200,
+                    "tipo_tela": "Lana"
+                },
+                {
+                    "cantidad_prendas": 75,
+                    "tipo_tela": "Seda"
+                }
+            ]
+        }
+    ]
+}
