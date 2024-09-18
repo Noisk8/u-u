@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juan Jaramillo Silva | UTE </title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #0d0d0d;
+            color: #00ffcc;
+        }
+        .card {
+            border: 4px solid #00ffcc;
+            background-color: #0d0d0d;
+            color: #00ffcc;
+            box-shadow: 0 0 10px #00ffcc;
+            border-collapse: collapse;
+            width: 45%;
+            margin: 10px;
+            padding: 20px;
+        }
+        h1, h4 {
+            color: #ff00ff;
+        }
+        a {
+            color: #00ffcc;
+            text-decoration: none;
+            border: 1px solid #00ffcc;
+            padding: 5px 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        a:hover {
+            background-color: #00ffcc;
+            color: #0d0d0d;
+        }
+        button {
+            background-color: #00ffcc;
+            color: #0d0d0d;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        button:hover {
+            background-color: #ff00ff;
+            color: #0d0d0d;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: #00ffcc;
+            box-shadow: 0 0 10px #00ffcc;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div><h1>Juan Jaramillo Silva</h1></div>
+        <div style="display: flex; justify-content: center;">
+            <div class="card" style="text-align: center;">
+                <h4><b>FrontEnd</b></h4>
+                <img src="/img/1.jpeg" alt="Imagen FrontEnd" style="width:50%; margin: 0 auto;">
+                <div class="container">
+                    <p>Descripción del curso de FrontEnd</p>
+                    <a href="/FRONTEND-I/index.html" target="_blank" style="display: inline-block;">Ver más</a>
+                </div>
+            </div>
+            <div class="card" style="text-align: center;">
+                <h4><b>Base De Datos</b></h4>
+                <img src="/img/1.jpeg" alt="Imagen Base De Datos" style="width:50%; margin: 0 auto;">
+                <div class="container">
+                    <p>Descripción del curso de Base De Datos</p>
+                    <a href="/Base de Datos/index.html" target="_blank" style="display: inline-block;">Ver más</a>
+                </div>
+            </div>
+        </div>
+        <div style="padding-top: 40px;">
+            <center><button id="nea" onclick="mostrar()">Click Aquí para ver la fecha</button></center>
+        </div>
+    </main>
+    <footer>
+        <p>© <script>document.write(new Date().getFullYear());</script> Noisk8</p>
+    </footer>
+    <script>
+        function mostrar() {
+            var boton = document.getElementById("nea");
+            var textoOriginal = boton.innerHTML;
+            boton.innerHTML = Date();
+            setTimeout(function() {
+                boton.innerHTML = textoOriginal;
+            }, 3000);
+        }
+    </script>
+</body>
+</html>

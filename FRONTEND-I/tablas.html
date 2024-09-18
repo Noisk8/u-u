@@ -1,144 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #0d0d0d;
+            color: #00ffcc;
+        }
+        table {
+            border: 4px solid #00ffcc;
+            background-color: #0d0d0d;
+            color: #00ffcc;
+            box-shadow: 0 0 10px #00ffcc;
+            border-collapse: collapse;
+            width: 100%;
+            margin: 10px 0;
+        }
+        th, td {
+            border: 1px solid #00ffcc;
+            padding: 10px;
+        }
+        th {
+            background-color: #1a1a1a;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .table-wrapper {
+            flex: 1;
+            min-width: 300px;
+            margin: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    
-    <h1>Tabla</h1>
 
-    <table border="2" style="background-color: bisque;">
-<tr>
-    <th>Nombre</th>
-    <th>Apellido</th>
-    <th>Edad</th>
-    <th>Dirección</th>
-</tr>
-<tr>
-    <td>Juan</td>
-    <td>Jaramillo</td>
-    <td>34</td>
-    <td>Calle 20 #22</td>
-</tr>
-<tr>
-    <td>María</td>
-    <td>González</td>
-    <td>28</td>
-    <td>Avenida 5 #10</td>
-</tr>
-<tr>
-    <td>Carlos</td>
-    <td>Pérez</td>
-    <td>45</td>
-    <td>Calle 15 #30</td>
-</tr>
-<tr>
-    <td>Lucía</td>
-    <td>Martínez</td>
-    <td>32</td>
-    <td>Calle 8 #12</td>
-</tr>
-<tr>
-    <td>Pedro</td>
-    <td>Ramírez</td>
-    <td>50</td>
-    <td>Avenida 3 #5</td>
-</tr>
-<tr>
-    <td>Elena</td>
-    <td>Torres</td>
-    <td>27</td>
-    <td>Calle 10 #18</td>
-</tr>
-<tr>
-    <td>Jorge</td>
-    <td>Hernández</td>
-    <td>40</td>
-    <td>Avenida 7 #14</td>
-</tr>
-<tr>
-    <td>Laura</td>
-    <td>Vargas</td>
-    <td>35</td>
-    <td>Calle 12 #20</td>
-</tr>
-<tr>
-    <td>Andrés</td>
-    <td>Morales</td>
-    <td>29</td>
-    <td>Avenida 9 #16</td>
-</tr>
-<tr>
-    <td>Paula</td>
-    <td>Rojas</td>
-    <td>33</td>
-    <td>Calle 6 #8</td>
-</tr>
+    <h1>Tablas</h1>
 
-    </table>
+   
 
-    <br>
-    <h1> ATributos de las tablas</h1>
+    <h1> Atributos de las tablas</h1>
 
-    <table border="2" style="background-color: antiquewhite;">
-<tr>
-<td colspan="3">Nombre</td>
-<td> Otra</td>
-</tr>
-<tr>
-    <td rowspan="2">1</td>
-    <td>1</td>
-    <td>1</td>
-</tr>
-<tr>
-    <td colspan="3">3</td>
-</tr>
-<tr>
-    <td rowspan="2">r</td>
-    <td>1</td>
-    <td>1</td>
-</tr>
-<tr>
-    <td>1</td>
-    <td>1</td>
-    <td>1</td>
+    <h2> <b>Colspan</b></h2>
+    <p>El atributo <b>colspan</b> en HTML se utiliza en las tablas para que una celda se extienda a través de varias columnas. Esto es útil para crear encabezados de tabla que abarcan múltiples columnas o para combinar celdas en una fila. El valor del atributo <b>colspan</b> especifica el número de columnas que la celda debe abarcar.</p>
 
-</tr>
-    </table>
+    <div class="container">
+       
+       
 
-    <hr</hr>
-</body>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th colspan="3">colspan 3</th>
+                    <th colspan="4">colspan 4</th>
+                </tr>
+                <tr>
+                    <td>uno</td>
+                    <td>dos</td>
+                    <td>tres</td>
+                    <td>cuatro</td>
+                    <td>cinco</td>
+                    <td>seis</td>
+                    <td>siete</td>
+                </tr>
+                <tr>
+                    <td>uno</td>
+                    <td>dos</td>
+                    <td>tres</td>
+                    <td>cuatro</td>
+                    <td>cinco</td>
+                    <td>seis</td>
+                    <td>siete</td>
+                </tr>
+            </table>
+        </div>
 
-<table border="2">
-<tr>
-    <th colspan="2">nombre</th>
-    <td> </td>
-
-</tr>
-<tr>
-<td>Pedro </td>
-<td>Alejandro</td>
-<td>Gomez</td>
-
-</tr>
-
-    <tr>
-        <td>Jaime</td>
-        <td>leaondro</td>
-        <td>Gonzales</td>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th colspan="3">colspan 3</th>
+                    <th colspan="4">colspan 4</th>
+                    <th colspan="2">colspan 2</th>
+                </tr>
+                <tr>
+                    <td>uno</td>
+                    <td>dos</td>
+                    <td>tres</td>
+                    <td>cuatro</td>
+                    <td>cinco</td>
+                    <td>seis</td>
+                    <td>siete</td>
+                    <td>ocho</td>
+                    <td>nueve</td>
+                </tr>
+                <tr>
+                    <td>uno</td>
+                    <td>dos</td>
+                    <td>tres</td>
+                    <td>cuatro</td>
+                    <td>cinco</td>
+                    <td>seis</td>
+                    <td>siete</td>
+                    <td>ocho</td>
+                    <td>nueve</td>
+                </tr>
+                <tr>
+                    <td>uno</td>
+                    <td>dos</td>
+                    <td>tres</td>
+                    <td>cuatro</td>
+                    <td>cinco</td>
+                    <td>seis</td>
+                    <td>siete</td>
+                    <td>ocho</td>
+                    <td>nueve</td>
+                </tr>
+            </table>
+        </div>
         
-    </tr>
+    </div>
 
+    <div class="table-wrapper" style="padding-bottom: 20px;">
+        <table>
+            <tr>
+                <th colspan="5">Colspan 5</th>
+            </tr>
+            <tr>
+                <td>uno</td>
+                <td>dos</td>
+                <td>tres</td>
+                <td>cuatro</td>
+                <td>cinco</td>
+            </tr>
+        </table>
+    </div>
+    <hr style=" border: 0; height: 2px; background: linear-gradient(to right, #00ffcc, #ff00ff); box-shadow: 0 0 10px #00ffcc;">
+    <h2> <b>Rowspan</b></h2>
+    <p>El atributo <b>rowspan</b> en HTML se utiliza en las tablas para que una celda se extienda a través de varias filas. Esto es útil para crear celdas que abarcan múltiples filas, lo que puede ser necesario para encabezados de tabla o para combinar celdas en una columna. El valor del atributo <b>rowspan</b> especifica el número de filas que la celda debe abarcar.</p>
 
-</table>
+    <div class="container">
 
+        <div class="table-wrapper">
 
+            <table>
+                <tr>
+                    <th rowspan="3">rowspan 2</th>
+                </tr>
+                <tr>
+                    <td> uno</td>
+                    <td> dos</td>
+                    <td> tres</td>
+                </tr>
+                <tr>
+                    <td> uno</td>
+                    <td> dos</td>
+                    <td> tres</td>
+                </tr>
+                <tr>
+                    <th rowspan="3"> rowspan 2</th>
+                    <td> dos</td>
+                    <td> dos</td>
+                    <td> tres</td>
+                </tr>
+                <tr>
+                    <td> uno</td>
+                    <td> dos</td>
+                    <td> tres</td>
+                </tr>
+            </table>
 
+        </div>
 
-<hr>
+        <div class="table-wrapper" style="padding-bottom: 10px;">
 
+            <table>
+                <tr>
+                    <th rowspan="5">rowspan 4</th>
+                </tr>
+                <tr>
+                    <td> uno</td>
+                    <td> dos</td>
+                    <td> tres</td>
+                </tr>
+                <tr>
+                    <td> uno</td>
+                    <td> dos</td>
+                    <td> tres</td>
+                </tr>
+                <tr>
+                    <td> uno</td>
+                    <td> dos</td>
+                    <td> tres</td>
+                </tr>
+                <tr>
+                    <td> uno</td>
+                    <td> dos</td>
+                    <td> tres</td>
+                </tr>
+            </table>
 
+        </div>
+
+    </div>
+
+    <hr style=" border: 0; height: 2px; background: linear-gradient(to right, #00ffcc, #ff00ff); box-shadow: 0 0 10px #00ffcc;">
+   
+
+    <h1>Ejercicio</h1>
+
+    <div class="container">
+
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th rowspan="3">Abril</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th colspan="3"> 2022</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th colspan="2">Fiesta</th>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <td colspan="5"> 0</td>
+                </tr>
+                <tr>
+                    <td>%</td>
+                    <td>/</td>
+                    <td>x</td>
+                    <td>-</td>
+                    <td>C</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td rowspan="2">+</td>
+                    <td rowspan="2">AC</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td colspan="2" rowspan="2">
+                        <center>=</center>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">0</td>
+                    <td>,</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <th colspan="2">nombre</th>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td>Pedro </td>
+                    <td>Alejandro</td>
+                    <td>Gomez</td>
+                </tr>
+                <tr>
+                    <td>Jaime</td>
+                    <td>leaondro</td>
+                    <td>Gonzales</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
 
 </html>

@@ -1,47 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios HTML</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #0d0d0d;
+            color: #00ffcc;
+        }
+        form {
+            border: 2px solid #00ffcc;
+            background-color: #1a1a1a;
+            color: #00ffcc;
+            box-shadow: 0 0 10px #00ffcc;
+            padding: 20px;
+            width: 50%;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #00ffcc;
+            background-color: #0d0d0d;
+            color: #00ffcc;
+            box-shadow: 0 0 5px #00ffcc;
+        }
+        button {
+            background-color: #00ffcc;
+            color: #0d0d0d;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        button:hover {
+            background-color: #ff00ff;
+            color: #0d0d0d;
+        }
+        hr {
+            border: 0;
+            height: 2px;
+            background: linear-gradient(to right, #00ffcc, #ff00ff);
+            box-shadow: 0 0 10px #00ffcc;
+        }
+        .radio-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .radio-group label {
+            width: 45%;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <form action="" style="border: 2px; border-style: groove;">
-<label for="nombre">Nombre</label>
-<input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
-<br>
-<hr>
-<label for="edad"> Edas</label>
-<input type="number" name="edad" id="edad" placeholder="ingresa tu edad">
-
-<hr>
-<br>
-
-<label for="email">Email</label>
-<input type="email" name="email" id="email" placeholder="ingresa tu mail ">
-<hr>
-<br>
-<label for="fecha">Fecha</label>
-<input type="date" name="date" placeholder="">
-<hr>
-<label for="">Estado Civil:</label>
-<select name="estadoc" id="estadoc">
-    <option value="Soltero">Soltero</option>
-    <option value="Soltero">Unión Libre</option>
-    <option value="Soltero">Viudo</option>
-    <option value="Soltero">Soltero</option>
-    <option value="Soltero">Soltero</option>
-   
-</select>
-
-<hr>
-<br>
-<label for="">Esta seguro de enviar la información</label>
-<input type="radio" value="SI " id="rad">SI
-<input type="radio" value="NO " id="rad">NO
-<br>
-<hr>
-<button>ENVIAR LA INFORMACIÓN</button>
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre">
+        <hr>
+        <label for="edad">Edad</label>
+        <input type="number" name="edad" id="edad" placeholder="Ingresa tu edad">
+        <hr>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Ingresa tu email">
+        <hr>
+        <label for="fecha">Fecha</label>
+        <input type="date" name="date" id="fecha">
+        <hr>
+        <label for="estadoc">Estado Civil:</label>
+        <select name="estadoc" id="estadoc">
+            <option value="Soltero">Soltero</option>
+            <option value="Union Libre">Unión Libre</option>
+            <option value="Viudo">Viudo</option>
+            <option value="Casado">Casado</option>
+            <option value="Divorciado">Divorciado</option>
+        </select>
+        <hr>
+        <label>¿Está seguro de enviar la información?</label>
+        <div class="radio-group">
+            <label for="rad_si"><input type="radio" name="confirmacion" value="SI" id="rad_si"> SI</label>
+            <label for="rad_no"><input type="radio" name="confirmacion" value="NO" id="rad_no"> NO</label>
+        </div>
+        <hr>
+        <button type="submit">ENVIAR LA INFORMACIÓN</button>
     </form>
 </body>
 </html>

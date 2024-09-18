@@ -4,31 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ejemplo de Listas</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #0d0d0d;
+            color: #00ffcc;
+        }
+        .menu {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #1a1a1a;
+            border: 2px solid #00ffcc;
+            box-shadow: 0 0 10px #00ffcc;
+            padding: 10px;
+        }
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .menu li {
+            margin-bottom: 10px;
+        }
+        .menu a {
+            color: #00ffcc;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .menu a:hover {
+            background-color: #ff00ff;
+            color: #0d0d0d;
+        }
+    </style>
 </head>
+<header>
+    <div class="menu">
+        <ul>
+            <li><a href="tablas.html">Tablas</a></li>
+            <li><a href="formulario.html">Formularios</a></li>
+          
+        </ul>
+    </div>
+   
+</header>
 <body>
-    <h1>Ejemplo de Listas</h1>
 
-    <h2>Lista Ordenada</h2>
-    <ol>
-        <li>Elemento 1</li>
-        <li>Elemento 2</li>
-        <li>Elemento 3</li>
-        <li>Elemento 4</li>
-        <li>Elemento 5</li>
-    </ol>
-
-    <h2>Lista Desordenada</h2>
-    <ul>
-        <li>Elemento A</li>
-        <li>Elemento B</li>
-        <li>Elemento C</li>
-        <li>Elemento D</li>
-        <li>Elemento E</li>
-    </ul>
-
-    <h2> <a href="tablas.html"> tablas</a></h2>
-    <p>Visita <a href="https://www.google.com">Google</a> para más información.</p>
-    <p>Visita <a href="https://www.wikipedia.org">Wikipedia</a> para más detalles.</p>
+    <div style="text-align: center; margin-top: 20px;">
+        <a href="../index.html">
+            <button style="
+                background-color: #ff00ff;
+                color: #0d0d0d;
+                border: 2px solid #00ffcc;
+                padding: 10px 20px;
+                cursor: pointer;
+                transition: background-color 0.3s, color 0.3s;
+                box-shadow: 0 0 10px #00ffcc;
+            ">volver 🏠</button>
+        </a>
+    </div>
 </body>
 </html>
-
