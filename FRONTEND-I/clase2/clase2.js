@@ -140,42 +140,161 @@
 //Nos permite recordar el entorno donde se creo laa funcion 
 
 
-function saludarDesde(nombre) {
-    let mensaje = "Hola, " + nombre;
-    return function () {
-        console.log(mensaje)
+// function saludarDesde(nombre) {
+//     let mensaje = "Hola, " + nombre;
+//     return function () {
+//         console.log(mensaje)
+//     }
+// }
+
+// const saludarCralos = saludarDesde("Carlos");
+// saludarCralos();
+
+
+// function crearContador() {
+
+//     let contador = 0;
+//     return function () {
+//         contador = contador + 1;
+
+//         return contador;
+
+//     };
+// }
+
+// const contador1 = crearContador();
+// console.log(contador1())
+
+
+// function crearMultiplicador(){
+//     let multiplicador = 1;
+//     return function(){
+//         multiplicador = multiplicador * 2;
+//         return multiplicador; 
+//     }
+// }
+
+// const multiplicador2 = crearMultiplicador();
+// console.log(multiplicador2())
+// console.log(multiplicador2())
+// console.log(multiplicador2())
+// console.log(multiplicador2())
+
+// CLOSURE
+
+
+// function casa(){
+//     let colorExterior = "Amarillo";
+//     contador = 0;
+//     return function(){
+//         let colores = ["Azul", "Rojo", "Verder"];
+//         colorExterior = colores [contador];
+//         contador++;
+//         return colorExterior;
+//     } 
+// }
+//  let cambiarColor = casa();
+
+//  console.log()
+
+
+ // FUNCIONES DE ORDEN SUPERIOR
+
+ //puede recibir funciones cómo parametros y/o retornar funciones 
+
+//  function operar (a, b, operacion){
+
+//     return operacion (a, b);
+//  }
+
+//  function sumarNeas(a,b){
+
+//     return a + b;
+
+
+//  }
+
+//  function restarNeas(a,b){
+// return a -b; 
+//  }
+
+//  console.log(operar(5,6, sumarNeas))
+// console.log(operar(5,6, restarNeas))
+
+
+// function operar1 (a,b,c, operacion1){
+//     return operacion1(a,b,c);
+
+// }
+
+// function multipilcar1(a,b,c){
+//     return a * b *c;
+// }
+
+// function dividir(a,b,c){
+//     return a / b / c;
+// }
+
+// console.log(operar1(2,8,3, multipilcar1))
+// console.log(operar1(2,8,3, dividir))
+
+
+// CALLBACK 
+
+// Son funciones que pasan como argumento a otra funcion 
+
+// function procesarEntradas(usuario, callback){
+//     console.log("Procesando Usuario: " + usuario)
+//     callback();
+// }
+
+// procesarEntradas("Juan", function(){
+//     console.log("Entradas procesadad")
+// });
+
+
+// function  realizarOperacionConRetraso(callback){
+
+//     console.log("Esperando visualizacion");
+//     setTimeout(() =>{
+//         callback();
+//     }, 2000);
+
+// }
+
+// function mostrarMensaje(){
+//     console.log("Operacion Completada");
+// }
+
+// realizarOperacionConRetraso(mostrarMensaje);
+
+
+//FUNCIONES RECURSIVAS 
+
+function contadorAtras( numero){
+
+    if(numero === 0){
+        console.log("fin del contador");
+        return;
+    }else{
+        console.log(numero);
+        let nuevoNumero = numero -1;
+        contadorAtras(nuevoNumero);
     }
+
 }
 
-const saludarCralos = saludarDesde("Carlos");
-saludarCralos();
+contadorAtras(10);
 
+function factorial (n ){
+    console.log("numero: " + n )
 
-function crearContador() {
-
-    let contador = 0;
-    return function () {
-        contador = contador + 1;
-
-        return contador;
-
-    };
-}
-
-const contador1 = crearContador();
-console.log(contador1())
-
-
-function crearMultiplicador(){
-    let multiplicador = 1;
-    return function(){
-        multiplicador = multiplicador * 2;
-        return multiplicador; 
+    if ( n === 0){
+        return 1;
+    } else {
+        return n * factorial(n -1)
     }
-}
 
-const multiplicador2 = crearMultiplicador();
-console.log(multiplicador2())
-console.log(multiplicador2())
-console.log(multiplicador2())
-console.log(multiplicador2())
+
+
+}
