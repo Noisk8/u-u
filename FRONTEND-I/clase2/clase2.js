@@ -298,3 +298,24 @@ function factorial (n ){
 
 
 }
+
+//EJERCICIO FINAL CALLBACK + FUNCION FLECHA
+let sunaNotas = 0;
+
+function procesarNotas(){
+
+
+    let notas =[5,6,7,8];
+    let suma =0;
+    for(let i = 0; i < notas.length; i++){
+        suma= suma + notas[i];
+    }
+    
+    functionCallback();
+}
+
+function visualizarNotas(() =>{
+
+    console.log("La suma  de las notas es:" + suma);
+    procesarNotas();
+});
