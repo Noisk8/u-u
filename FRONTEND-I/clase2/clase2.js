@@ -314,7 +314,7 @@ function procesarNotas(){
     functionCallback();
 }
 
-function visualizarNotas(() =>{
+function visualizarNotas((notas) =>{
 
     console.log("La suma  de las notas es:" + suma);
     procesarNotas();
