@@ -11,9 +11,9 @@ const botonEliminar = document.createElement('button');
 botonEliminar.innerText = 'Eliminar';
 botonEliminar.classList.add('eliminar-btn');
 botonEliminar.addEventListener('click', (evento)=>{
-    const boton = evento.target;
-    const tarea2 = boton.parentElement;
-    tarea2.remove()
+const boton = evento.target;
+const tarea2 = boton.parentElement;
+tarea2.remove()
 })
 tarea.appendChild(botonEliminar);
 
