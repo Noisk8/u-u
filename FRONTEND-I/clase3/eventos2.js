@@ -10,8 +10,15 @@ console.log(tarea)
 const botonEliminar = document.createElement('button');
 botonEliminar.innerText = 'Eliminar';
 botonEliminar.classList.add('eliminar-btn');
-tarea.appendChild(botonEliminar )
+botonEliminar.addEventListener('click', (evento)=>{
+    const boton = evento.target;
+    const tarea2 = boton.parentElement;
+    tarea2.remove()
+})
+tarea.appendChild(botonEliminar);
 
+const contenedorTareas = document.getElementById('tareas-lista'); // Asegúrate de que este ID exista en tu HTML
+contenedorTareas.appendChild(tarea);
 
 
     console.log('Click en boton agregar ')
@@ -34,9 +41,9 @@ botonesEliminar.forEach((boton) => {
 boton.addEventListener('click', (evento) =>{
 
     const boton = evento.target;
-    const tarea =boton.parentElement;
+    const tarea = boton.parentElement;
     tarea.remove(   )
-    console.log('boton elminar  ')
+    console.log('boton elminar')
 })
 
 
