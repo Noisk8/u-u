@@ -3,16 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Clase 4</h1>
+    <h1 class="titulo">Clase 4</h1>
 
     <h1> Clase 4.1</h1>
 
-    <div id="container" style="background-color: green; padding: 8px;">
+    <div id="container" style="background-color: green; padding: 8px;" class="contenedor">
 
-        <div id="padre" style="background-color: red; padding: 8px;">
+        <div id="padre" style="background-color: rgb(255, 255, 255); padding: 8px;">
+
+            <ul class="lista" id="lista">
+                <li class="tarea" id="li1">Tarea 1 </li>
+                <li class="tarea" id="li2">Tarea 2</li>
+                <li class="tarea" id="li3" >Tarea 3</li>
+                <li class="tarea" id="li4">Tarea 4</li>
+                <li class="tarea" id="li5">Tarea 5</li>
+            </ul>
 
             <div id="hijo" style="background-color: aqua; padding: 8px;">
 
@@ -20,7 +29,15 @@
             </div>
         </div>
     </div>
+
+
+
     
+    <script src="./jquery-3.7.1.min.js"></script>
+<!-- <script src="./js/sintaxis.js"></script> -->
+<!-- <script src="../clase4/js/clase4.js"></script> -->
+ <script src="./js/navegacionjqueri.js"></script>
 </body>
-<script src="../clase4/js/clase4.js"></script>
+
+
 </html>
