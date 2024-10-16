@@ -51,6 +51,8 @@ root.render(
     <Videos lVideos={videos} />
     <Prueba2 nombre="Jacinto" datos={persona2} />
     <Prueba2 nombre="Pedro" datos={persona3} />
+
+    <Calculadora />
   </>
 );
 
