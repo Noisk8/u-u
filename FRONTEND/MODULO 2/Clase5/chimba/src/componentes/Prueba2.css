@@ -1,0 +1,12 @@
+.contenedor {
+background-color: rgb(231, 230, 153);
+padding: 20px;
+margin: 40px;
+border: 1px solid #000000;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+box-shadow: 0 0 10px #1a1804, 0 0 20px #0f0a01, 0 0 30px #0e0903, 0 0 40px #0a0703;
+  
+}
